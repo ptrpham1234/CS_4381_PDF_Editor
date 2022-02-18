@@ -17,6 +17,12 @@ from PyPDF2 import PdfFileReader, PdfFileWriter, PdfFileMerger
 
 basePath = r"".join(os.getcwd())  # get the current directory
 files_list = []
+savePath = "".join(os.path.join(basePath, 'data'))
+
+if not os.path.exists(savePath):
+    os.makedirs(savePath)
+
+print(os.path)
 
 pdfFiles = glob.glob(os.path.join(basePath, '*.pdf'.format('')))  # returns a list of all the PDF files in the directory
 
@@ -29,7 +35,7 @@ for file in pdfFiles:
     files_list.append(pdf)
 
 # open the resulting file to be printed
-with open("result/result.pdf", "ab+") as f:
+with open(os.path.join(savePath, "result.pdf"), "wb+") as f:
     for file in files_list:
         # the for loop removes the title page and the last questions page
         for i in range(1, file.getNumPages() - 1):
