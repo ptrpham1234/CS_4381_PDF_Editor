@@ -50,3 +50,5 @@ with open(os.path.join(savePath, "result.pdf"), "wb+") as f:
 
     # write it to file.
     writer.write(f)
+
+input("Done with editing. Press enter to quit")
