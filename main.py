@@ -29,7 +29,7 @@ for file in pdfFiles:
     files_list.append(pdf)
 
 # open the resulting file to be printed
-with open("result.pdf", "ab+") as f:
+with open("result/result.pdf", "ab+") as f:
     for file in files_list:
         # the for loop removes the title page and the last questions page
         for i in range(1, file.getNumPages() - 1):
