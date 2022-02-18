@@ -7,7 +7,8 @@ dynamically is not within my skill level.
 ## How to install
 If you're on a windows, click on the releases section on the right side of the page and download the latest file named `main.exe`.
 
-If you're on a Mac or Linux, click on the green code button and download as zip. Unzip it and open a terminal at the location of the file and
-type in `chmod +x main.exe` to give yourself permission to execute it and type `./main.py` to execute the program.
+If you're on Linux, you can try running it with Wine. I personally haven't tried.
+
+If you're on a Mac, get a better computer I guess idk.
 
 Make sure to put the executable in a different folder with just the PDF files. It should create a folder named `data` and in the folder should be a pdf named `result.pdf`
