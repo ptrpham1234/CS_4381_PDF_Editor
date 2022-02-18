@@ -21,8 +21,7 @@ savePath = "".join(os.path.join(basePath, 'data'))
 
 if not os.path.exists(savePath):
     os.makedirs(savePath)
-
-print(os.path)
+    print("data folder not found. Making one.")
 
 pdfFiles = glob.glob(os.path.join(basePath, '*.pdf'.format('')))  # returns a list of all the PDF files in the directory
 
